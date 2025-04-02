@@ -2,3 +2,14 @@
   font-family: Mont;
   src: url(../font/RethinkSans-VariableFont_wght.ttf);
 }
+
+:root {
+  --color1: #ffffff;
+  --color2: #24405A;
+  --color3: #2E577A;
+  --color4: #3A6C9D;
+  --color5: #51A0EA;
+  --color6: #4284BF;
+  --color7: #4E9BE0;
+  --color8: #45F550;
+}

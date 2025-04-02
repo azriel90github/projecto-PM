@@ -1,18 +1,7 @@
-
 * {
   margin: 0;
   padding: 0;
   font-family: Mont;
-}
-
-:root {
-  --color1: #ffffff;
-  --color2: #24405A;
-  --color3: #2E577A;
-  --color4: #3A6C9D;
-  --color5: #51A0EA;
-  --color6: #4284BF;
-  --color7: #4E9BE0;
 }
 
 html {
@@ -40,6 +29,30 @@ header {
   color: var(--color5);
 }
 
+.idiomas {
+  display: flex;
+  align-items: center;
+}
+
+.idiomas button {
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color4);
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  color: var(--color5);
+  font-size: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.idiomas button .number {
+  color: var(--color8);
+}
+
 .logo {
   padding: 0.5rem;
   font-size: 1.5rem;
@@ -50,6 +63,7 @@ header {
 .hora {
   font-size: 1.5rem;
   margin-right: 20px;
+  border-right: var(--color7) 2px solid;
 }
 
 .hora span {
