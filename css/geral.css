@@ -1,0 +1,57 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Mont;
+}
+
+:root {
+  --color1: #ffffff;
+  --color2: #24405A;
+  --color3: #2E577A;
+  --color4: #3A6C9D;
+  --color5: #51A0EA;
+  --color6: #4284BF;
+  --color7: #4E9BE0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: var(--color2);
+  backdrop-filter: blur(10px);
+  color: var(--color5);
+  position: fixed;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  transition: .5s;
+}
+
+.navbar a {
+  margin: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--color5);
+}
+
+.logo {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--color5);
+}
+
+.hora {
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.hora span {
+  color: var(--color5);
+}
