@@ -28,11 +28,31 @@ header {
   gap: 1.5rem;
 }
 
+.navbar button {
+  width: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color4);
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  color: var(--color1);
+  font-size: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar button .number {
+  color: var(--color8);
+}
+
 .navbar a {
   gap: 1rem;
   font-size: 1rem;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--color5);
 }
 
@@ -59,6 +79,7 @@ header {
   font-size: 1rem;
   margin-left: 10px;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .idiomas button .number {
@@ -66,10 +87,19 @@ header {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
   padding: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-decoration: none;
   color: var(--color5);
+}
+
+.logo i {
+  font-size: 1.7rem;
+  color: var(--color1);
 }
 
 .hora {
@@ -79,4 +109,53 @@ header {
 
 .hora span {
   color: var(--color5);
+}
+
+#menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background-color: var(--color2);
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: none;
+}
+
+#menu-icon {
+  display: block;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.idiomas button {
+  display: none;
+}
+
+.navbar button {
+  margin-top: 1.5rem;
+  display: flex;
+  width: 80%;
+  font-weight: 500;
+}
+
+.hora {
+  display: none;
+}
+
+.navbar.active {
+  display: block;
+}
+
+.navbar a {
+  padding: 0.5rem;
+  display: flex;
+  font-size: 20px;
+}
 }

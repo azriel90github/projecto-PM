@@ -5,19 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/import.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Cursos - Code</title>
 </head>
   <body>
 
     <header>
 
-      <a href="#" class="logo">Cursos.Code</a>
+      <a href="#" class="logo"><i class='bx bx-code-curly' style='color:#ffffff' ></i>Cursos.Code</a>
 
       <nav class="navbar">
         <a href="#home">Home</a>
         <a href="#formadores">Formadores</a>
         <a href="#cursos">Cursos</a>
-        <a href="#inscricoes">Inscreva-se</a>
+        <a href="#inscricoes">Inscrever-se</a>
+        <button>
+          <p>Cursos</p>
+          <p class="number">3</p>
+        </button>
       </nav>
 
       <div class="idiomas">
@@ -30,10 +37,6 @@
             <span id="sec">00</span>
         </span> 
 
-        <div class="separador">
-
-        </div>
-
         <button>
           <p>Cursos</p>
           <p class="number">3</p>
@@ -41,13 +44,30 @@
         
       </div> 
 
+      <div class="bx bx-menu" id="menu-icon"></div>
+
     </header>
 
     <main>
       <!--Seção home------------------------->
-      <section>
-        
-      </section>
+      <section class="home" id="home">
+        <div class="home-content">
+            <h3>cursos.code</h3>
+            <h1 class="text-degrade">Aprende a programar como um mestre ...</h1>
+            <h4>Nossa missão</h4>
+            <p>
+              Nossa missão é capacitar pessoas com conhecimento técnico de alta qualidade, combinando teoria e prática para formar profissionais preparados para os desafios do mercado de trabalho
+            </p>
+            <p>
+              Como diz Samuel Backett "Sempre tentando, sempre falhando, não importa, tente novamente, falhe novamente e falhe melhor."
+            </p>
+            
+            <div class="btns">
+              <a href="#inscrever-se" class="btn piscando">Começar Agora</a>
+              <a href="https://wa.me/244932101903" class="btn" rel="external" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+    </section>
       <!--Porquê cursar na PM---------------->
       <section>
 
@@ -61,13 +81,14 @@
     </main>
 
     <footer>
-      <aside>
-        
-      </aside>
+      <p>Rodapé</p>
+      <p>Contactos</p>
+      <p>Páginas</p>
+      <p>Social</p>
     </footer>
 
   </body>
 
-  <script src="script.js"></script>
+  <script src="js/menu.js"></script>
   <script src="js/relogio.js"></script>
 </html>
