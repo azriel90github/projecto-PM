@@ -7,10 +7,11 @@ section.formacoes {
 }
 
 #serviços {
-    margin-top: 5rem;
+    background-image: url(../img/bg.png);
+    margin-top: 3rem;
     display: grid;
-    grid-template-columns: 353px;
-    gap: 30px;
+    grid-template-columns: 343px 343px 343px;
+    gap: 3rem;
 }
 
 .serv {
@@ -24,10 +25,10 @@ section.formacoes {
 }
 
 .serviços {
-    /*box-shadow: 1px 1px 10px #0c97fa96;*/
-    border-radius: 30px;
+    box-shadow: 1px 1px 10px #0c97fa96;
+    border-radius: 20px;
     display: flex;
-    background-color: var(--color3);
+    /*background-color: var(--color3);*/
     padding: 0.2rem;
 }
 
@@ -44,7 +45,7 @@ section.formacoes {
 
 
 #suporte {
-    margin-left: 1rem;
+    margin: 1rem;
 }
 
 #suporte h4 {
@@ -53,15 +54,19 @@ section.formacoes {
     justify-content: space-between;
     color: #00B2E0;
     font-size: 23px;
+    padding-bottom: 1rem;
+    font-weight: 700;
+}
 
-    font-weight: 500;
+#suporte h4 i {
+    color: var(--color1);
 }
 
 
 #suporte p {
-    line-height: 30px;
-    padding-bottom: 20px;
-    color: #0d98fc;
+    line-height: 29px;
+    padding-right: 1rem;
+    color: var(--color5);
     font-size: 1rem;
     font-weight: 450;
 }
@@ -102,8 +107,8 @@ section.formacoes {
 .serviços  .serv .content-img img {
     width: 100%;
     text-align: center;
-    padding-bottom: 20px;
-    border-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .serviços  .serv button  {
@@ -111,7 +116,7 @@ section.formacoes {
     cursor: pointer;
     font-size: 15px;
     width: 100%;
-    border-radius: 19px;
+    border-radius: 15px;
     display: flex;
     margin: auto;
     align-items: center;  
@@ -141,9 +146,13 @@ section.formacoes {
     align-items: center;
     justify-content: space-between;
     color: #00B2E0;
-    padding: 20px 25px 8px 20px;
+    padding: 0px 25px 8px 20px;
     gap: 6px;
     font-weight: 500;
+}
+
+.final-serv svg {
+    width: 20%;
 }
 
 .final-serv  {
@@ -152,4 +161,22 @@ section.formacoes {
 
 .final-serv i  {
     font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+
+
+    #serviços {
+        grid-template-columns: 100%;
+        gap: 1rem;
+    }
+
+    .serviços  .serv .content-preço {
+        font-size: 1.5rem;
+    }
+
+    .serviços  .serv button {
+        font-size: 15px;
+    }
+
 }
