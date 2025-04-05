@@ -1,3 +1,76 @@
-.formacoes h1 {
+section.formadores {
+  padding: 4rem 7% 2rem;
+  background-image: url(../img/bg.png);
+}
+
+.formador {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.formador h4 {
+  margin-top: 1rem;
+}
+
+.formador i {
+  font-size: 1.5rem;
+}
+
+.formador p {
+  margin-top: 0.3rem;
+}
+
+.formadores-content {
+  margin-top: 4rem;
+  margin-left: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.formadores h1 {
   font-size: 4rem;
+}
+
+
+.formador-img-1 {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-image: url(../img/formadores/perfil01.jpg);
+  background-size: cover;
+}
+
+.formador-img-2 {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-image: url(../img/formadores/perfil02.jpg);
+  background-size: cover;
+}
+
+.formador-img-3 {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-image: url(../img/formadores/perfil03.jpg);
+  background-size: cover;
+}
+
+.formador-img-4 {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-image: url(../img/formadores/perfil04.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .formadores h1 {
+    font-size: 3rem;
+    margin-left: 0.7rem;
+  }
 }

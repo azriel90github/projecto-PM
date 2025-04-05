@@ -166,6 +166,11 @@ section.formacoes {
 
 @media (max-width: 768px) {
 
+    .formacoes h1 {
+        font-size: 3rem;
+        margin-left: 0.7rem;
+    }
+
     .serviços  .serv .content-img img {
         height: 20vh;
     }
