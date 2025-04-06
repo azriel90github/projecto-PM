@@ -1,8 +1,9 @@
 footer {
   background-image: url(../img/bg.png);
   display: flex;
-  justify-content: space-evenly;
-  padding: 10rem 7% 2rem;
+  justify-content: space-between;
+  padding: 3rem 7% 3rem;
+  box-shadow: 1px 1px 30px var(--color3);
 }
 
 footer div {
@@ -11,25 +12,51 @@ footer div {
 
 footer h1 {
   font-size: 1.7rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.9rem;
 }
 
 footer h2 {
   font-size: 1.7rem;
-  margin-top: 1rem;
-  margin-bottom: 0.4rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 footer p {
+  color: var(--color5);
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
+  font-weight: 450;
+}
+
+footer p a i {
+  border: none;
+  padding: 0;
+  color: var(--color8);
+  font-size: 1.1rem;
+  margin-right: 0.4rem;
+}
+
+footer p i {
+  border: 1px solid var(--color5);
+  border-radius: 50%;
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+}
+
+footer p a {
+  display: flex;
+  align-items: center;
+  color: var(--color5);
+  text-decoration: none;
 }
 
 .final {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1.8rem 7% 1.5rem;
 }
 
 .final p {
