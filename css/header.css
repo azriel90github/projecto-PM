@@ -10,7 +10,7 @@ html {
 
 header {
   /*box-shadow: 1px 1px 30px var(--color3);*/
-  background-color: var(--color2);
+  background-color: var(--color3);
   backdrop-filter: blur(10px);
   color: var(--color5);
   position: fixed;

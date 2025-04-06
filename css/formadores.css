@@ -1,5 +1,5 @@
 section.formadores {
-  padding: 6rem 7% 8rem;
+  padding: 6rem 7% 10rem;
   background-image: url(../img/bg.png);
 }
 
@@ -81,6 +81,14 @@ section.formadores {
   height: 10rem;
   border-radius: 50%;
   background-image: url(../img/formadores/perfil04.jpg);
+  background-size: cover;
+}
+
+.formador-img-5 {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-image: url(../img/formadores/perfil_2.jpg);
   background-size: cover;
 }
 

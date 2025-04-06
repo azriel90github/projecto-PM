@@ -3,7 +3,7 @@
 }
 
 .tech-rotate i {
-  color: var(--color1);
+  color: var(--color4);
   font-size: 4rem;
 }
 
@@ -67,5 +67,11 @@
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-rotate {
+    margin-top: 2.5rem;
   }
 }

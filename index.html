@@ -26,7 +26,7 @@
         <a href="#formadores">Formadores</a>
         <button>
           <p>Cursos</p>
-          <p class="number">7</p>
+          <p class="number">9</p>
         </button>
       </nav>
 
@@ -42,7 +42,7 @@
 
         <button>
           <p>Cursos</p>
-          <p class="number">7</p>
+          <p class="number">9</p>
         </button>
         
       </div> 
@@ -70,8 +70,37 @@
             </div>
         </div>
         <div class="foto-perfil">
-          <img src="svg/undraw_hacker-mind_j91b.svg" alt="">
+          <img id="img-perfil" src="svg/undraw_mobile-development_tjxm.svg" alt="Imagem de perfil">
         </div>
+        <script>
+          // Lista de imagens (pode adicionar mais)
+          const imagens = [
+            "svg/undraw_react_ytu4.svg",
+            "svg/undraw_flutter-dev_c8s7.svg",
+            "svg/undraw_pair-programming_9jyg.svg",
+            "svg/undraw_web-developer_ggt0.svg",
+            "svg/undraw_software-engineer_xv60.svg",
+            "svg/undraw_hacker-mind_j91b.svg",
+            "svg/undraw_mobile-development_tjxm.svg"
+          ];
+        
+          const imgElemento = document.getElementById("img-perfil");
+          let indexAtual = 0;
+        
+          setInterval(() => {
+            // Aplica fade-out
+            imgElemento.classList.add("fade-out");
+
+            // Espera o fade-out terminar (500ms), troca a imagem e faz fade-in
+            setTimeout(() => {
+              indexAtual = (indexAtual + 1) % imagens.length;
+              imgElemento.src = imagens[indexAtual];
+
+              // Remove o fade-out para fazer o fade-in
+              imgElemento.classList.remove("fade-out");
+            }, 500);
+          }, 2000); // Troca a imagem a cada 2 segundos (2000ms)
+        </script>
     </section>
       <!--Scroller---------------->
       <div class="tech-rotate scroller" data-speed="fast">
@@ -80,12 +109,9 @@
             <i class='bx bxl-flutter'></i>
             <i class='bx bxl-django'></i>
             <i class='bx bxl-android'></i>
-            <i class='bx bxl-figma'></i>
             <i class='bx bxl-angular'></i>
             <i class='bx bxl-vuejs'></i>
             <i class='bx bxl-visual-studio'></i>
-            <i class='bx bxl-google'></i>
-            <i class='bx bxl-github'></i>
             <i class='bx bxl-nodejs'></i>
             <i class='bx bxl-git'></i>
             <i class='bx bxl-apple'></i>
@@ -98,7 +124,6 @@
             <i class='bx bxl-unity'></i>
             <i class='bx bxl-postgresql'></i>
             <i class='bx bxl-docker'></i>
-            <i class='bx bxl-html5'></i>
             <i class='bx bxl-tailwind-css'></i>
             <i class='bx bxl-microsoft'></i>
         </div>
@@ -221,10 +246,10 @@
           <div class="serviços">
             <div class="serv">
                 <p class="content-img">
-                    <img src="img/linux.png" alt="photoshop">
+                    <img src="img/ubuntu.jpg" alt="photoshop">
                 </p>
                 <div id="suporte">
-                    <h4>Linux<i class='bx bx-code-curly'></i></h4>
+                    <h4>Ubuntu<i class='bx bx-code-curly'></i></h4>
                     <p>
                       Aprenda e descubra como criar páginas web do básico ao avançado com layouts responsivao e atraentes.
                     </p>
@@ -397,6 +422,78 @@
                 <a href="#contacto" class="selecionar-pacote"><button >Assistir agora<i class='bx bxl-youtube' style='color:#ffffff' ></i></button></a>
             </div>
            </div>
+
+           <div class="serviços">
+            <div class="serv">
+                <p class="content-img">
+                    <img src="img/dart.png" alt="photoshop">
+                </p>
+                <div id="suporte">
+                    <h4>Flutter<i class='bx bx-code-curly'></i></h4>
+                    <p>
+                      Aprenda e descubra como criar páginas web do básico ao avançado com layouts responsivao e atraentes.
+                    </p>
+                </div>
+
+                
+                <div class="final-serv">
+                
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="gold" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.788 1.402 8.168L12 18.896l-7.336 3.871 1.402-8.168L.132 9.211l8.2-1.193L12 .587z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="gold" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.788 1.402 8.168L12 18.896l-7.336 3.871 1.402-8.168L.132 9.211l8.2-1.193L12 .587z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="gold" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.788 1.402 8.168L12 18.896l-7.336 3.871 1.402-8.168L.132 9.211l8.2-1.193L12 .587z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="gold" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.788 1.402 8.168L12 18.896l-7.336 3.871 1.402-8.168L.132 9.211l8.2-1.193L12 .587z"/>
+                      </svg>
+                    </div>
+
+                    Gratuito
+                </div>
+                <a href="#contacto" class="selecionar-pacote"><button >Assistir agora<i class='bx bxl-youtube' style='color:#ffffff' ></i></button></a>
+            </div>
+           </div>
+
+           <div class="serviços">
+            <div class="serv">
+                <p class="content-img">
+                    <img src="img/mongodb.jpg" alt="photoshop">
+                </p>
+                <div id="suporte">
+                    <h4>Mongo DB<i class='bx bx-code-curly'></i></h4>
+                    <p>
+                      Aprenda e descubra como criar páginas web do básico ao avançado com layouts responsivao e atraentes.
+                    </p>
+                </div>
+
+                
+                <div class="final-serv">
+                
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="gold" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.788 1.402 8.168L12 18.896l-7.336 3.871 1.402-8.168L.132 9.211l8.2-1.193L12 .587z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="gold" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.788 1.402 8.168L12 18.896l-7.336 3.871 1.402-8.168L.132 9.211l8.2-1.193L12 .587z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="gold" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.788 1.402 8.168L12 18.896l-7.336 3.871 1.402-8.168L.132 9.211l8.2-1.193L12 .587z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="gold" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.788 1.402 8.168L12 18.896l-7.336 3.871 1.402-8.168L.132 9.211l8.2-1.193L12 .587z"/>
+                      </svg>
+                    </div>
+
+                    Gratuito
+                </div>
+                <a href="#contacto" class="selecionar-pacote"><button >Assistir agora<i class='bx bxl-youtube' style='color:#ffffff' ></i></button></a>
+            </div>
+           </div>
         </div>
 
         
@@ -406,15 +503,16 @@
         <h1 class="text-degrade">Formadores</h1>
 
         <div class="formadores-content">
+
+          
           <div class="formador">
-            <div class="formador-img-1">
+            <div class="formador-img-5">
 
             </div>
-            <h4>Diego Fernandes</h4>
-            <p class="function">Full Stack Developer</p>
+            <h4>Maike Brito </h4>
+            <p class="function">Software Engineer</p>
             <p class="facu">Engenharia Informática</p>
           </div>
-
 
           <div class="formador">
             <div class="formador-img-2">
@@ -434,6 +532,14 @@
             <p class="facu">Ciências da Computação</p>
           </div>
 
+          <div class="formador">
+            <div class="formador-img-1">
+
+            </div>
+            <h4>Diego Fernandes</h4>
+            <p class="function">Full Stack Developer</p>
+            <p class="facu">Engenharia Informática</p>
+          </div>
 
           <div class="formador">
             <div class="formador-img-4">
@@ -443,7 +549,6 @@
             <p class="function">Frontend Sénior</p>
             <p class="facu">Ciências da Computação</p>
           </div>
-
 
       </section>
     </main>
@@ -475,7 +580,7 @@
           <a href="#formadores"><i class='bx bx-link-alt'></i>Formadores</a>
         </p>
 
-        <h2 class="text-degrade">Portal Dev</h2>
+
 
         <p>
           <a href="https://react.dev/" target="_blank"><i class='bx bx-link-alt'></i>React</a>
