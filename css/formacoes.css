@@ -18,7 +18,6 @@ section.formacoes {
     width: 100%;
 }
 
-
 .serviços:hover {   
     cursor: pointer;
     transition-duration: .3s;
@@ -96,9 +95,6 @@ section.formacoes {
     padding: 2px;
     color: #00B2E0;
 }
-
-
-
 
 .serviços  .serv .content-preço del {
     color: #0d98fc;

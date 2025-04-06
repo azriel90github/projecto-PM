@@ -1,16 +1,45 @@
 footer {
-  display: grid;
-  grid-template-columns: 25% 25% 25%;
-  padding: 4rem 7% 2rem;
+  background-image: url(../img/bg.png);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10rem 7% 2rem;
+}
+
+footer div {
+  font-size: 1.5rem;
+}
+
+footer h1 {
+  font-size: 1.7rem;
+  margin-bottom: 0.6rem;
+}
+
+footer h2 {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
 }
 
 footer p {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.final p {
+  color: var(--color5);
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
   footer {
-    grid-template-columns: 1fr;
-    padding: 2rem 5%;
+    flex-direction: column;
+    padding: 4rem 7% 2rem;
   }
 }

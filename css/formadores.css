@@ -11,6 +11,8 @@ section.formadores {
 
 .formador h4 {
   margin-top: 1rem;
+  color: var(--color6);
+  font-size: 1.3rem;
 }
 
 .formador i {
@@ -19,6 +21,20 @@ section.formadores {
 
 .formador p {
   margin-top: 0.3rem;
+}
+
+.formador p.function {
+  display: flex;  
+  align-items: center;
+  color: var(--color9);
+  font-weight: 500;
+  gap: 0.3rem;
+}
+
+
+.formador p.facu {
+  color: var(--color1);
+  gap: 0.4rem;
 }
 
 .formadores-content {
