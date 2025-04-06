@@ -52,7 +52,7 @@ section.formacoes {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #00B2E0;
+    color: var(--color9);
     font-size: 23px;
     padding-bottom: 1rem;
     font-weight: 700;
@@ -119,14 +119,18 @@ section.formacoes {
     width: 100%;
     border-radius: 15px;
     display: flex;
-    margin: auto;
     align-items: center;  
-    justify-content: center;
+    justify-content: space-between;
     font-size: 17px;
-    background-color: #007D9C;
+    background-color: var(--color4);
     color: #e6e6e6;
-    padding: 13px;
+    padding: 8px 15px 8px 20px;
     margin-top: 0.6rem;
+}
+
+.serviços  .serv button i {
+    font-size: 2rem;
+    color: #00B2E0;
 }
 
 .serviços  .serv a {

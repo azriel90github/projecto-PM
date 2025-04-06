@@ -4,6 +4,10 @@ footer {
   padding: 4rem 7% 2rem;
 }
 
+footer p {
+  font-size: 1.5rem;
+}
+
 @media (max-width: 768px) {
   footer {
     grid-template-columns: 1fr;
