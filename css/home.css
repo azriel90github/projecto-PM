@@ -6,6 +6,7 @@ section.home {
 .home {
   background-image: url(../img/bg.png);
   display: flex;
+  gap: 3rem;
 }
 
 .home .home-content {
@@ -24,7 +25,7 @@ section.home {
   line-height: 4.7rem;
 }
 
-.text-degrade{
+.text-degrade {
   background-image: linear-gradient(to right, #18d3fd , #0767AC);
   background-clip: text;
   -webkit-background-clip: text;
@@ -81,10 +82,9 @@ section.home {
   font-size: 2rem;
 }
 
-
 .foto-perfil img {
   margin: auto;
-  padding-top: 2.5rem;
+  padding-top: 1.3rem;
   width: 100%;
 }
 
