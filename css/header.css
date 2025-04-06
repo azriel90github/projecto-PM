@@ -9,6 +9,7 @@ html {
 }
 
 header {
+  /*box-shadow: 1px 1px 30px var(--color3);*/
   background-color: var(--color2);
   backdrop-filter: blur(10px);
   color: var(--color5);
@@ -80,6 +81,7 @@ header {
   margin-left: 10px;
   cursor: pointer;
   font-weight: 500;
+  box-shadow: 1px 1px 30px var(--color3);
 }
 
 .idiomas button .number {

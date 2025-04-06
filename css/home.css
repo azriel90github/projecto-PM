@@ -1,6 +1,6 @@
 section.home {
   min-height: 80vh;
-  padding: 8rem 7% 2rem;
+  padding: 9rem 7% 2rem;
 }
 
 .home {
@@ -23,7 +23,6 @@ section.home {
   font-weight: 450;
   line-height: 4.7rem;
 }
-
 
 .text-degrade{
   background-image: linear-gradient(to right, #18d3fd , #0767AC);
@@ -69,12 +68,13 @@ section.home {
   justify-content: space-between;
   text-decoration: none;
   background-color: var(--color4);
-  padding: 0.8rem 1.5rem 0.8rem 1.6rem;
+  padding: 0.9rem 1.6rem 0.9rem 1.7rem;
   border: none;
   border-radius: 2rem;
   color: var(--color1);
   font-size: 1rem;
   cursor: pointer;
+  box-shadow: 1px 1px 30px var(--color3);
 }
 
 .btn i {

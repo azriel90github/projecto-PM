@@ -2,6 +2,7 @@ footer {
   background-image: url(../img/bg.png);
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
   padding: 3rem 7% 3rem;
   box-shadow: 1px 1px 30px var(--color3);
 }
@@ -67,6 +68,6 @@ footer p a {
 @media (max-width: 768px) {
   footer {
     flex-direction: column;
-    padding: 4rem 7% 2rem;
+    padding: 3rem 7% 2rem;
   }
 }
