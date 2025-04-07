@@ -56,7 +56,7 @@
       <section class="home" id="home">
         <div class="home-content">
             <h3>cursos.code</h3>
-            <h1 class="text-degrade">Aprende a programar como um mestre ...</h1>
+            <h1 class="text-degrade">Aprende a programar como um mestre...</h1>
             <h4>Nossa missão</h4>
             <p>
               Nossa missão é capacitar pessoas com conhecimento técnico de alta qualidade, combinando teoria e prática para formar profissionais preparados para os desafios do mercado de trabalho.
@@ -69,26 +69,29 @@
               <a href="#inscrever-se" class="btn piscando">Começar Agora<i class='bx bxl-youtube' style='color:#ffffff' ></i></a>
             </div>
         </div>
+    
         <div class="foto-perfil">
-          <img id="" src="svg/undraw_my-code-snippets_1t66.svg" alt="Imagem de perfil">
+          <img id="img-perfil" src="svg/undraw_dev-focus_dd7i.svg" alt="Imagem de perfil">
         </div>
+        
         <script>
-          // Lista de imagens (pode adicionar mais)
           const imagens = [
-          "svg/undraw_code-inspection_z688.svg",
-          "svg/undraw_code-review_ept3.svg",
-          "svg/undraw_develop-app_yg6p.svg",
-          "svg/undraw_in-the-zone_07y7.svg",
-          "svg/undraw_mobile-application_lhsq.svg",
-          "svg/undraw_modern-design_yur1.svg",
-          "svg/undraw_my-code-snippets_1t66.svg",
-            "svg/undraw_react_ytu4.svg",
+            "svg/undraw_mobile-development_tjxm.svg",
+            "svg/undraw_code-inspection_z688.svg",
+            "svg/undraw_code-review_ept3.svg",
+            "svg/undraw_develop-app_yg6p.svg",
+            "svg/undraw_in-the-zone_07y7.svg",
+            "svg/undraw_mobile-application_lhsq.svg",
             "svg/undraw_flutter-dev_c8s7.svg",
-            "svg/undraw_pair-programming_9jyg.svg",
-            "svg/undraw_web-developer_ggt0.svg",
-            "svg/undraw_software-engineer_xv60.svg",
+            "svg/undraw_modern-design_yur1.svg",
+            "svg/undraw_my-workspace_5961.svg",
+            "svg/undraw_dev-focus_dd7i.svg",
+            "svg/03.svg",
+            "svg/02.svg",
+            "svg/undraw_progressive-app_9517.svg",
+            "svg/undraw_react_ytu4.svg",
             "svg/undraw_hacker-mind_j91b.svg",
-            "svg/undraw_mobile-development_tjxm.svg"
+            "svg/undraw_dev-focus_dd7i.svg"
           ];
         
           const imgElemento = document.getElementById("img-perfil");
@@ -96,18 +99,23 @@
         
           setInterval(() => {
             // Aplica fade-out
-            imgElemento.classList.add("fade-out");
-
-            // Espera o fade-out terminar (500ms), troca a imagem e faz fade-in
+            imgElemento.classList.add("invisivel");
+        
             setTimeout(() => {
+              // Atualiza índice
               indexAtual = (indexAtual + 1) % imagens.length;
+        
+              // Troca imagem
               imgElemento.src = imagens[indexAtual];
-
-              // Remove o fade-out para fazer o fade-in
-              imgElemento.classList.remove("fade-out");
-            }, 500);
-          }, 2000); // Troca a imagem a cada 2 segundos (2000ms)
+        
+              // Pequeno delay para garantir que o fade-in funcione corretamente
+              setTimeout(() => {
+                imgElemento.classList.remove("invisivel");
+              }, 50); // Esse delay ajuda o navegador a "reconhecer" a transição
+            }, 500); // Bate com o tempo da transição do CSS
+          }, 3000);
         </script>
+        
     </section>
       <!--Scroller---------------->
       <div class="tech-rotate scroller" data-speed="fast">
@@ -587,14 +595,15 @@
           <a href="#formadores"><i class='bx bx-link-alt'></i>Formadores</a>
         </p>
 
-
-
         <p>
           <a href="https://react.dev/" target="_blank"><i class='bx bx-link-alt'></i>React</a>
           <a href="https://www.alura.com.br/" target="_blank"><i class='bx bx-link-alt'></i>Alura</a>
           <a href="https://roadmap.sh/" target="_blank"><i class='bx bx-link-alt'></i>Roadmap</a>
           <a href="https://www.w3schools.com/" target="_blank"><i class='bx bx-link-alt'></i>W3School</a>
           <a href="https://www.rocketseat.com.br/" target="_blank"><i class='bx bx-link-alt'></i>Rocketseat</a>
+          <a href="https://www.youtube.com/watch?v=M5QY2_8704o&t=5642s" target="_blank"><i class='bx bx-link-alt'></i>Code music</a>
+          <a href="https://www.gameshopangola.com/" target="_blank"><i class='bx bx-link-alt'></i>GameShop</a>
+          <a href="https://www.ncrangola.com/" target="_blank"><i class='bx bx-link-alt'></i>NCR</a>
         </p>
 
       </div>

@@ -1,5 +1,6 @@
 section.formadores {
-  padding: 6rem 7% 10rem;
+  padding: 6rem 7% 2rem;
+  height: 70vh;
   background-image: url(../img/bg.png);
 }
 
@@ -51,7 +52,6 @@ section.formadores {
   font-size: 4rem;
 }
 
-
 .formador-img-1 {
   width: 10rem;
   height: 10rem;
@@ -100,5 +100,6 @@ section.formadores {
 
   section.formadores {
     padding: 4rem 7% 7rem;
+    height: auto;
   }
 }
