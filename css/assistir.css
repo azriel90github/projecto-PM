@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
+div {
   /*box-shadow: 1px 1px 30px var(--color3);*/
   background-color: var(--color3);
   backdrop-filter: blur(10px);
@@ -17,36 +17,28 @@ header {
   padding: 1.3rem;
   width: 100%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  z-index: 100;
+  justify-content: space-around;
+
   transition: .5s;
   font-size: 1.8rem;
 }
 
-header a {
+div a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--color5);
   font-size: 1.8rem;
   transition: .5s;
 }
 
-.home {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
 
-.curso {
-  color: var(--color9);
-}
 
-.home i {
-  color: var(--color1);
-}
+
 
 @media (max-width: 768px) {
-  header {
+  div {
     justify-content: space-between;
   }
 }
