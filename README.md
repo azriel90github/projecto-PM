@@ -2,6 +2,7 @@
 <img src="img/pm-streaming/08.png" alt="apresentacaorepositorio" />
 <img src="img/pm-streaming/09.png" alt="apresentacaorepositorio" />
 <img src="img/pm-streaming/10.png" alt="apresentacaorepositorio" />
+<img src="img/pm-streaming/11.jpeg" alt="apresentacaorepositorio" />
 <img src="img/pm-streaming/05.png" alt="apresentacaorepositorio" />
 <img src="img/pm-streaming/06.png" alt="apresentacaorepositorio" />
 <img src="img/pm-streaming/07.png" alt="apresentacaorepositorio" />
