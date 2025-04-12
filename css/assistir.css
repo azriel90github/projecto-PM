@@ -56,18 +56,22 @@ main .video-container video {
 }
 
 @media (max-width: 768px) {
+  
   header {
     width: 90%;
     justify-content: space-between;
   }
+
   main {
     display: grid;
     gap: 0.1rem;
     grid-template-columns: 100%;
   }
+
   main .video-container {
     min-height: 80vh;
     padding: 7rem 3% 1rem;
   
   }
+
 }
