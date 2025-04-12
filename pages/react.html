@@ -21,21 +21,75 @@
   </header>
 
   <main>
-
     <div class="video-container">
-      <div>
-        <video controls poster="../img/react.jpeg" src="../videos/React Conf 2024 Highlights.mp4"></video>
+      <video id="mainVideo" controls poster="../img/react.jpeg">
+        <source src="../videos/react/React Conf 2024 Highlights.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+  
+    <div class="video-thumbnails">
+      <div class="thumbnail" onclick="changeVideo('../videos/React Conf 2024 Highlights.mp4', '../img/laravel.jpg')">
+        <img src="../img/react.jpeg" alt="React Conf">
+        <div>
+          <p>React Conf 2024<i class='bx bx-dots-vertical-rounded'></i></p>
+          <p>
+            <p>Aula 1</p>
+            <p>200 Likes<i class='bx bx-like'></i></p>
+          </p>
+        </div>
       </div>
-      <div>
-
+      <div class="thumbnail" onclick="changeVideo('../videos/Laravel Tips.mp4', '../img/laravel.jpg')">
+        <img src="../img/react.jpeg" alt="Laravel Tips">
+        <p>Dicas Laravel</p>
+      </div>
+      <div class="thumbnail" onclick="changeVideo('../videos/NextJS Overview.mp4', '../img/nextjs.jpg')">
+        <img src="../img/react.jpeg" alt="NextJS Overview">
+        <p>NextJS Overview</p>
+      </div>
+      <div class="thumbnail" onclick="changeVideo('../videos/NextJS Overview.mp4', '../img/nextjs.jpg')">
+        <img src="../img/react.jpeg" alt="NextJS Overview">
+        <p>NextJS Overview</p>
+      </div>
+      <div class="thumbnail" onclick="changeVideo('../videos/NextJS Overview.mp4', '../img/nextjs.jpg')">
+        <img src="../img/react.jpeg" alt="NextJS Overview">
+        <p>NextJS Overview</p>
+      </div>
+      <div class="thumbnail" onclick="changeVideo('../videos/NextJS Overview.mp4', '../img/nextjs.jpg')">
+        <img src="../img/react.jpeg" alt="NextJS Overview">
+        <p>NextJS Overview</p>
+      </div>
+      <div class="thumbnail" onclick="changeVideo('../videos/NextJS Overview.mp4', '../img/nextjs.jpg')">
+        <img src="../img/react.jpeg" alt="NextJS Overview">
+        <p>NextJS Overview</p>
+      </div>
+      <div class="thumbnail" onclick="changeVideo('../videos/NextJS Overview.mp4', '../img/nextjs.jpg')">
+        <img src="../img/react.jpeg" alt="NextJS Overview">
+        <p>NextJS Overview</p>
+      </div>
+      <div class="thumbnail" onclick="changeVideo('../videos/NextJS Overview.mp4', '../img/nextjs.jpg')">
+        <img src="../img/react.jpeg" alt="NextJS Overview">
+        <p>NextJS Overview</p>
+      </div>
+      <div class="thumbnail" onclick="changeVideo('../videos/NextJS Overview.mp4', '../img/nextjs.jpg')">
+        <img src="../img/react.jpeg" alt="NextJS Overview">
+        <p>NextJS Overview</p>
       </div>
     </div>
-
-    <div>
-
-    </div>
-
   </main>
+
+  
+  <script>
+    function changeVideo(videoSrc, posterSrc) {
+      const video = document.getElementById('mainVideo');
+      video.pause();
+      video.setAttribute('poster', posterSrc);
+      video.querySelector('source').setAttribute('src', videoSrc);
+      video.load();
+      video.play();
+    }
+  </script>
+  
 
 </body>
 </html>
