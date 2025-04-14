@@ -64,6 +64,7 @@ main video {
 
 .thumbnail {
   width: 100%;
+  height: 12vh;
   gap: 1rem;
   display: grid;
   grid-template-columns: 60% 70%;
@@ -74,6 +75,7 @@ main video {
 
 .thumbnail img {
   width: 100%;
+  height: 12vh;
   border-radius: 0.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
@@ -88,9 +90,33 @@ main video {
   font-weight: bold;
 }
 
-.thumbnail p i {
-  color: var(--color5);
+.thumbnail .title i {
+  color: var(--color1);
   font-size: 1.3rem;
+}
+
+.thumbnail .likes i {
+  color: var(--color9);
+  font-size: 1.1rem;
+}
+
+.thumbnail .title {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color1);
+}
+
+.thumbnail .number {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color9);
+}
+
+.thumbnail .title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color7);
 }
 
 .thumbnail:hover {
