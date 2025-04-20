@@ -100,13 +100,6 @@ main video {
   font-size: 1.1rem;
 }
 
-.thumbnail .title {
-  text-align: left;
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--color1);
-}
-
 .thumbnail .number {
   font-size: 1rem;
   font-weight: bold;
@@ -114,6 +107,7 @@ main video {
 }
 
 .thumbnail .title {
+  text-align: left;
   font-size: 1rem;
   font-weight: bold;
   color: var(--color7);
