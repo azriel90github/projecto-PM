@@ -50,6 +50,19 @@ main .video-container {
   border-radius: 1rem;
 }
 
+main .video-container button {
+  background-color: var(--color1);
+  color: var(--color5);
+  border: none;
+  margin: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
 main video {
   width: 100%;
   border-radius: 1rem;
@@ -113,9 +126,13 @@ main video {
   color: var(--color7);
 }
 
+/*
 .thumbnail:hover {
   transform: scale(1.05);
 }
+*/
+
+
 
 @media (max-width: 768px) {
   main {
@@ -128,6 +145,7 @@ main video {
     min-height: 80vh;
     padding: 7rem 3% 1rem;
   }
+
 
   .video-thumbnails {
     flex-direction: row;
