@@ -80,7 +80,7 @@ main video {
   height: 12vh;
   gap: 1rem;
   display: grid;
-  grid-template-columns: 60% 70%;
+  grid-template-columns: 50% 50%;
   cursor: pointer;
   text-align: center;
   transition: transform 0.2s ease;
