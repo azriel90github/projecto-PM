@@ -87,6 +87,20 @@ section.home {
   padding-top: 3.3rem;
   width: 100%;
 }
+
+.foto-perfil img {
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
 .foto-perfil img {
   height: auto;
   transition: opacity 0.5s ease-in-out;
