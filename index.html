@@ -53,7 +53,7 @@
 
     <main>
       <!--Seção home------------------------->
-      <section class="home" id="home">
+      <section class="home animar-slide-right" id="home">
         <div class="home-content">
             <h3>cursos.code</h3>
             <h1 class="text-degrade">Aprende a programar como um mestre...</h1>
@@ -73,6 +73,8 @@
         <div class="foto-perfil">
           <img id="img-perfil" src="svg/undraw_dev-focus_dd7i.svg" alt="Imagem de perfil">
         </div>
+      
+        
         
         <script>
           const imagens = [
@@ -143,6 +145,7 @@
             <i class='bx bxl-microsoft'></i>
         </div>
       </div>
+
 
       <section class="formacoes" id="formacoes">
         <h1 class="text-degrade">Cursos</h1>
@@ -254,7 +257,7 @@
 
                     Gratuito
                 </div>
-                <a href="pages/laravel.html" class="selecionar-pacote"><button >Assistir agora<i class='bx bxl-youtube' style='color:#ffffff' ></i></button></a>
+                <a class="selecionar-pacote"><button >Assistir agora<i class='bx bxl-youtube' style='color:#ffffff' ></i></button></a>
             </div>
            </div>
 
@@ -511,6 +514,22 @@
            </div>
         </div>
 
+        <script>
+          const formacoes = document.querySelector("#formacoes");
+        
+          const observerFormacoes = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                formacoes.classList.add("animar-slide-right");
+                observer.unobserve(formacoes); // Garante que a animação não se repita
+              }
+            });
+          }, {
+            threshold: 0.6, // Dispara quando pelo menos 60% da seção estiver visível
+          });
+        
+          observerFormacoes.observe(formacoes);
+        </script>
         
       </section>
 
@@ -566,6 +585,7 @@
           </div>
 
       </section>
+
     </main>
 
     <footer>
