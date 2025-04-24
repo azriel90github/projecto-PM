@@ -45,6 +45,7 @@ header {
   display: none;
 }
 
+
 .navbar button .number {
   color: var(--color8);
 }
@@ -86,6 +87,12 @@ header {
 
 .idiomas button .number {
   color: var(--color8);
+}
+
+.idiomas button:hover {
+  background-color: var(--color2);
+  color: var(--color1);
+  transition: .2s;
 }
 
 .logo {

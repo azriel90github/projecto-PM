@@ -62,6 +62,11 @@ section.home {
   gap: 1rem;
 }
 
+.btns:hover {
+  transform: scale(1.05);
+  transition: .2s;
+}
+
 .btn {
   width: 90%;
   display: flex;
@@ -75,8 +80,9 @@ section.home {
   color: var(--color1);
   font-size: 1rem;
   cursor: pointer;
-  box-shadow: 1px 1px 30px var(--color3);
+  /*box-shadow: 1px 1px 30px var(--color3);*/
 }
+
 
 .btn i {
   font-size: 2rem;
@@ -115,8 +121,6 @@ section.home {
 .animar-slide-right {
   animation: slideRight 1s ease-out forwards;
 }
-
-  
 
 
 .foto-perfil img {
