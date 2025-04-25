@@ -83,6 +83,11 @@ section.home {
   /*box-shadow: 1px 1px 30px var(--color3);*/
 }
 
+.btn:hover {
+  background-color: var(--color3);
+  color: var(--color1);
+  transition: .6s;
+}
 
 .btn i {
   font-size: 2rem;
