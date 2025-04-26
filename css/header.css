@@ -29,7 +29,7 @@ header {
   gap: 1.5rem;
 }
 
-.navbar button {
+.navbar .botão {
   width: 13rem;
   display: flex;
   align-items: center;
@@ -46,8 +46,14 @@ header {
 }
 
 
-.navbar button .number {
+.navbar .botão .number {
   color: var(--color8);
+}
+
+.navbar .botão:hover {
+  background-color: var(--color2);
+  color: var(--color1);
+  transition: .2s;
 }
 
 .navbar a {
@@ -68,7 +74,8 @@ header {
   align-items: center;
 }
 
-.idiomas button {
+.idiomas a {
+  text-decoration: none;
   width: 13rem;
   display: flex;
   align-items: center;
@@ -85,11 +92,11 @@ header {
   box-shadow: 1px 1px 30px var(--color3);
 }
 
-.idiomas button .number {
+.idiomas a .number {
   color: var(--color8);
 }
 
-.idiomas button:hover {
+.idiomas a:hover {
   background-color: var(--color2);
   color: var(--color1);
   transition: .2s;
@@ -128,7 +135,6 @@ header {
   .navbar {
     background-color: var(--color2);
     position: absolute;
-    text-align: left;
     top: 100%;
     left: 0;
     width: 100%;
@@ -143,14 +149,14 @@ header {
   margin-right: 2rem;
 }
 
-.idiomas button {
+.idiomas a {
   display: none;
 }
 
-.navbar button {
+.navbar .botão {
   margin-top: 1.5rem;
   display: flex;
-  width: 80%;
+  width: 70%;
   font-weight: 500;
 }
 

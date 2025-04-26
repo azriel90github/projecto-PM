@@ -48,6 +48,7 @@ section.formacoes {
 
 #suporte {
     margin: 1rem;
+    height: 21vh;
 }
 
 #suporte h4 {
@@ -161,6 +162,8 @@ section.formacoes {
 
 .final-serv  {
     color: var(--color8);
+    font-weight: 100;
+    font-size: 1rem;
 }
 
 .final-serv i  {
@@ -176,6 +179,11 @@ section.formacoes {
 
     .serviços  .serv .content-img img {
         height: 20vh;
+    }
+
+    #suporte {
+        margin: 1rem;
+        height: 17vh;
     }
 
 
