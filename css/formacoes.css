@@ -48,7 +48,7 @@ section.formacoes {
 
 #suporte {
     margin: 1rem;
-    height: 21vh;
+    height: 15vh;
 }
 
 #suporte h4 {
@@ -81,7 +81,6 @@ section.formacoes {
 }
 
 .serviços  .serv .content-preço {
-    padding: 0px 0px 20px 0px;
     line-height: 1.8rem;
     text-align: center;
     font-weight:100;
@@ -151,7 +150,7 @@ section.formacoes {
     align-items: center;
     justify-content: space-between;
     color: #00B2E0;
-    padding: 0px 25px 8px 20px;
+    padding: 4rem 25px 8px 20px;
     gap: 6px;
     font-weight: 500;
 }
